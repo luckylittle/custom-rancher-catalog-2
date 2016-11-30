@@ -1,0 +1,10 @@
+---
+name: custom-catalog-2
+description: >
+  A Demo App created for https://odecee.atlassian.net/browse/DEVOPS-51
+version: 0.0.1-rancher1
+category: demo
+maintainer: Lucian Maly <lmaly@odecee.com.au>
+license: Apache2
+projectURL: https://github.com/luckylittle/custom-catalog-2
+
