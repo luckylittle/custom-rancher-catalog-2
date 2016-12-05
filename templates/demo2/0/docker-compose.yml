@@ -1,0 +1,9 @@
+techradar-frontend:
+  image: techradar-frontend:latest
+  ports:
+   - "80:80"
+  links:
+    - techradar-server
+
+techradar-server:
+  image: techradar-server:latest

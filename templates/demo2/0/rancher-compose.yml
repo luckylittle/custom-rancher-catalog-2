@@ -1,0 +1,7 @@
+version: '2'                    
+catalog:
+  name:                         "custom-catalog-2"
+  version:                      "0.0.1-odecee"
+  description:                  "demo"
+  minimum_rancher_version:      v1.0.1
+  questions:
