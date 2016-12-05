@@ -1,4 +1,3 @@
-version: '2'                    
 .catalog:
   name:                         "custom-catalog-2"
   version:                      "0.0.1-odecee"
