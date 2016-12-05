@@ -1,5 +1,5 @@
 version: '2'                    
-catalog:
+.catalog:
   name:                         "custom-catalog-2"
   version:                      "0.0.1-odecee"
   description:                  "demo"
