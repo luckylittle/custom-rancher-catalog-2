@@ -1,9 +1,20 @@
-techradar-frontend:
-  image: techradar-frontend:latest
-  ports:
-   - "80:80"
-  links:
-    - techradar-server
+version: '2'
+services:
+  techradar-server:
+    image: 758085500738.dkr.ecr.us-east-1.amazonaws.com/techradar-server:latest
+    build: .
+    volumes:
+      - "./.data/db:/var/lib/mongodb"
+    restart: always
+    ports:
+      - "3000:3000"
 
-techradar-server:
-  image: techradar-server:latest
+  techradar-frontend:
+    image:  758085500738.dkr.ecr.us-east-1.amazonaws.com/techradar-frontend:latest
+    depends_on:
+      - techradar-server
+    links:
+      - techradar-server
+    ports:
+      - "8100:8100"
+    tty: true
