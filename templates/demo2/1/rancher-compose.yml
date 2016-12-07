@@ -1,0 +1,7 @@
+version: '2'  
+catalog:
+  name:                         "TechRadar"
+  version:                      "0.0.2-odecee"
+  description:                  "demo"
+  minimum_rancher_version:      v1.2.0
+  questions:
