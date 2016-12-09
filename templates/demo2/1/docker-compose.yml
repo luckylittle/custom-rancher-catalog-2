@@ -3,7 +3,7 @@ services:
   techradar-server:
     image: 758085500738.dkr.ecr.us-east-1.amazonaws.com/techradar-server:latest
     volumes:
-      - "./.data/db:/var/lib/mongodb"
+      - "/.data/db:/var/lib/mongodb"
     restart: always
     ports:
       - "3000:3000"
